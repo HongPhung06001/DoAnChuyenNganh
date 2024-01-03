@@ -58,7 +58,7 @@ def main():
             st.markdown("<h1 style='text-align: center; color: orange;'>Accuracy = 0.6734466425188075</h1>",
                         unsafe_allow_html=True)
 
-            st.subheader('Biểu đồ hàm mất mát trên tập test')
+            st.subheader('Biểu đồ ma trận nhầm lẫn trên tập test')
             render_svg('RESULT/confusion_matrix_fer2013_cm.svg')
 
         if dataset == 'ckextend':
@@ -83,7 +83,7 @@ def main():
             st.markdown("<h1 style='text-align: center; color: orange;'>Accuracy = 0.8846153846153846</h1>",
                        unsafe_allow_html=True)
 
-            st.subheader('Biểu đồ hàm mất mát trên tập test')
+            st.subheader('Biểu đồ ma trận nhầm lẫn trên tập test')
             render_svg('RESULT/confusion_matrix_ckextend_cm.svg')
 
     elif app_mode == 'NHẬN DẠNG':
